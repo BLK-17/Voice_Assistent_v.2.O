@@ -1,0 +1,235 @@
+Below is a **single README text format** suitable for a GitHub repository. You can copy it directly into **`README.md`**.
+
+---
+
+# JARVIS – AI Desktop Voice Assistant
+
+A dynamic desktop voice assistant inspired by the fictional AI assistant J.A.R.V.I.S..
+This project provides a local AI-powered assistant capable of voice interaction, command automation, and a graphical interface.
+
+The assistant uses offline speech recognition with OpenAI Whisper and a GUI built with Kivy.
+
+---
+
+# Features
+
+* Wake word activation (**"Jarvis"**)
+* Automatic speech recognition
+* Whisper fallback recognition
+* Automatic language detection
+* Dynamic command interpretation
+* Multi-command execution
+* Keyboard command fallback
+* GUI interface
+* Desktop automation
+* Conversation memory
+
+Example commands:
+
+```
+Jarvis open youtube
+Jarvis open chrome and search python tutorial
+Jarvis play ai news
+Jarvis what time is it
+Jarvis shutdown computer
+```
+
+If voice recognition fails after 3 attempts, Jarvis automatically switches to **text command mode**.
+
+---
+
+# Project Structure
+
+```
+Jarvis/
+│
+├── jarvis_final.py
+├── temp.wav
+├── requirements.txt
+└── README.md
+```
+
+---
+
+# Installation Guide
+
+## 1. Clone Repository
+
+```
+git clone https://github.com/yourusername/jarvis-ai-assistant.git
+cd jarvis-ai-assistant
+```
+
+---
+
+## 2. Create Virtual Environment
+
+```
+python -m venv jarvis_env
+```
+
+Activate environment:
+
+Windows
+
+```
+jarvis_env\Scripts\activate
+```
+
+Linux / macOS
+
+```
+source jarvis_env/bin/activate
+```
+
+---
+
+## 3. Upgrade pip
+
+```
+python -m pip install --upgrade pip
+```
+
+---
+
+## 4. Install Dependencies
+
+```
+pip install speechrecognition
+pip install pyttsx3
+pip install openai-whisper
+pip install langdetect
+pip install kivy
+pip install numpy
+```
+
+---
+
+## 5. Install Microphone Support
+
+Windows users may need PyAudio.
+
+```
+pip install pyaudio
+```
+
+If installation fails:
+
+```
+pip install pipwin
+pipwin install pyaudio
+```
+
+---
+
+## 6. Install FFmpeg
+
+Whisper requires FFmpeg.
+
+Download from:
+
+```
+https://ffmpeg.org/download.html
+```
+
+Verify installation:
+
+```
+ffmpeg -version
+```
+
+---
+
+# Running the Assistant
+
+Run the application:
+
+```
+python jarvis_final.py
+```
+
+Expected output:
+
+```
+Loading Whisper model...
+Jarvis online
+```
+
+Then say:
+
+```
+Jarvis open youtube
+```
+
+---
+
+# Text Command Mode
+
+If voice input fails after **three attempts**, Jarvis switches to text mode.
+
+Example:
+
+```
+open youtube and search ai tutorials
+```
+
+---
+
+# Example Supported Commands
+
+```
+Jarvis open youtube
+Jarvis open chrome
+Jarvis search machine learning tutorials
+Jarvis play relaxing music
+Jarvis what time is it
+Jarvis shutdown computer
+```
+
+Multiple tasks:
+
+```
+Jarvis open youtube and search python tutorial
+```
+
+---
+
+# Technologies Used
+
+* Python
+* SpeechRecognition
+* Pyttsx3
+* OpenAI Whisper
+* LangDetect
+* Kivy GUI
+
+---
+
+# Future Improvements
+
+* Real wake-word engine
+* Iron-Man style HUD interface
+* Local AI reasoning engine
+* Plugin system
+* Smart home integration
+* Cross-platform desktop application
+
+---
+
+# License
+
+MIT License
+
+---
+
+# Author
+
+Developed by BLK
+
+---
+
+If you want, I can also help you add:
+
+* **Iron-Man style GUI (animated HUD interface)**
+* **plugin architecture for unlimited commands**
+* **AI reasoning system so Jarvis understands natural language better**.
